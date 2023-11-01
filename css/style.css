@@ -7,22 +7,47 @@
 
 - Font weights:
 Default: 400
+medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line heights:
 Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter Spacing
+-0.5px
+0.75px
 
 --- 02 COLORS
 
-- Primary: #FF8C00
-- Tints:
-- Shades:
+- Primary: #e67e22
+- Tints: 
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
 - Accents:
 - Greys:
+#767676 (lightest gray allowed on #fff) 
+#888
 #555
+#333
+#6f6f6f (lightest gray allowed on #fdf2e9)
 
 --- 05 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
 
 --- 07 WHITESPACE
 
@@ -35,6 +60,7 @@ Default: 1
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -57,14 +83,217 @@ body {
   --white-font: #f2f2f2;
 }
 
-.hero-section {
-  min-height: 100vh;
-  background-image: url(/images/banner.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+/* General styling */
+/* section {
+  padding: 25rem 0;
+} */
+
+.container {
+  max-width: 180rem;
+  padding: 0 8rem;
+  margin: auto;
 }
 
-.hero-header {
-  color: var(--white-font);
+.services_section .services_container,
+.about_section .about_container,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: 600;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  letter-spacing: -0.825px;
+  color: #000;
+}
+
+section .title-white {
+  position: relative;
+  text-align: center;
+  font-size: 5.5rem;
+  font-weight: 600;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+  letter-spacing: -0.825px;
+  color: #fff;
+}
+
+/* Navigation */
+.logo {
+  height: 9rem;
+  margin-left: -1rem;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  padding: 15px 0;
+  background: crimson;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .menu-btn a {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 1.2rem 3.6rem;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.navbar .menu-btn a:hover {
+  color: var(--secondary-color);
+  background: none;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+  color: #fff;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  display: block;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: var(--main-color);
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.home {
+  display: flex;
+  background: url("/images/banner.jpg") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 50rem;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home .container {
+  width: 100%;
+  display: flex;
+}
+
+.home .home-content .text-2 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-left: -3px;
+  line-height: 120%;
+  margin-bottom: 2rem;
+  margin-top: 10rem;
+}
+
+.home .home-content .text-2 span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.home .home-content a {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 1.2rem 3.6rem;
+  margin-top: 2rem;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+  color: var(--secondary-color);
+  background: none;
+}
+
+/* services section */
+.services {
+  color: #000;
+}
+
+.services_section .services_container .services {
+  width: calc(33% - 2rem);
+  text-align: center;
+  padding: 5rem 10rem;
+}
+
+.services_section .services_container .services .services_titles {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+.services_section .services_container .services .services_text {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  line-height: 2.8rem;
+}
+
+/* project section */
+
+.about_section {
+  background-color: #000;
+  display: flex;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about_txt_box {
+  font-size: 2.4rem;
+  color: #f2f2f2;
 }
