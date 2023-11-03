@@ -109,7 +109,7 @@ section .title {
   text-align: center;
   font-size: 5.5rem;
   font-weight: 600;
-  margin-top: 6rem;
+  margin-top: 5rem;
   padding-bottom: 6rem;
   letter-spacing: -0.825px;
   color: #000;
@@ -120,7 +120,7 @@ section .title-white {
   text-align: center;
   font-size: 5.5rem;
   font-weight: 600;
-  margin-top: 6rem;
+  margin-top: 5rem;
   padding-bottom: 6rem;
   letter-spacing: -0.825px;
   color: #fff;
@@ -282,18 +282,7 @@ section .title-white {
   line-height: 2.8rem;
 }
 
-/* project section */
-
+/* about section */
 .about_section {
   background-color: #000;
-  display: flex;
-}
-
-.about-container {
-  display: flex;
-}
-
-.about_txt_box {
-  font-size: 2.4rem;
-  color: #f2f2f2;
 }
