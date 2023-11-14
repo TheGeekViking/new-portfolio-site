@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Christian Sergerie</title>
   </head>
   <body>
@@ -123,10 +128,11 @@
           </div>
         </div>
       </section>
+
       <!-- about section -->
       <section class="about_section">
         <h2 class="title-white">What I can offer you</h2>
-        <div class="container grid grid--2-cols grid--center-v">
+        <div class="container grid grid--2-cols grid--center-v about-container">
           <div class="about_img_box">
             <img src="/images/cell.png" alt="" />
           </div>
@@ -145,6 +151,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Testimonial section -->
       <section class="testimonial-section">
         <h3 class="title">Don’t take my word</h3>
         <div
@@ -197,6 +205,8 @@
           </div>
         </div>
       </section>
+
+      <!-- projects section -->
       <section class="projects-section">
         <h3 class="title-white">Past Projects</h3>
         <div
@@ -272,6 +282,47 @@
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <a class="project-btn" href="#">See my projects</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact form -->
+      <section class="contact-section">
+        <h3 class="title">Contact Me</h3>
+        <div class="container">
+          <div class="contact-container">
+            <div class="form-box">
+              <form action="">
+                <div>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Message"
+                    name="text"
+                    required
+                  />
+                </div>
+                <input type="submit" />
+              </form>
+            </div>
+            <div class="address-box">adress box</div>
           </div>
         </div>
       </section>

@@ -79,8 +79,9 @@ body {
 
 :root {
   --main-color: #ff8c00;
-  --secondary-color: rgba(255, 140, 0, 0.7);
+  --secondary-color: rgba(255, 140, 0, 0.702);
   --white-font: #f2f2f2;
+  --white-bg: #f3f3f3;
 }
 
 /* General styling */
@@ -281,7 +282,7 @@ section .title-tertiary-white {
 
 /* services section */
 .services_section {
-  background-color: #f3f3f3;
+  background-color: var(--white-bg);
 }
 
 .services {
@@ -311,6 +312,11 @@ section .title-tertiary-white {
 .about_section {
   background-color: #000;
   padding-bottom: 10rem;
+  min-height: 100vh;
+}
+
+.about-container {
+  margin-top: 4rem;
 }
 
 .about_img_box {
@@ -331,7 +337,7 @@ section .title-tertiary-white {
 
 /* testimonial section */
 .testimonial-section {
-  background-color: #f3f3f3;
+  background-color: var(--white-bg);
 }
 
 .testimonial-container {
@@ -387,6 +393,7 @@ section .title-tertiary-white {
 /* projects section */
 .projects-section {
   background-color: #000;
+  padding-bottom: 10rem;
 }
 
 .project-container {
@@ -437,5 +444,24 @@ section .title-tertiary-white {
 } */
 
 .project-img {
-  box-shadow: 15px 15px 5px var(--main-color);
+  box-shadow: 15px 15px 25px var(--secondary-color);
+}
+
+/* contact form */
+.contact-section {
+  background-color: var(--white-bg);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+}
+
+.form-box {
+  background-color: #555;
+  padding: 2.5rem;
+}
+
+.address-box {
+  background-color: #000;
 }
