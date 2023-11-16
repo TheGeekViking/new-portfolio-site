@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Christian Sergerie</title>
   </head>
   <body>
@@ -231,7 +235,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="project-btn" href="#">See my projects</a>
+            <a class="project-btn" href="#">Visit Website</a>
           </div>
         </div>
         <div
@@ -245,7 +249,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="project-btn" href="#">See my projects</a>
+            <a class="project-btn" href="#">Visit Website</a>
           </div>
           <div class="project-img-box">
             <picture>
@@ -281,7 +285,7 @@
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a class="project-btn" href="#">See my projects</a>
+            <a class="project-btn" href="#">Visit Website</a>
           </div>
         </div>
       </section>
@@ -289,43 +293,74 @@
       <!-- contact form -->
       <section class="contact-section">
         <h3 class="title">Contact Me</h3>
-        <div class="container">
-          <div class="contact-container">
+        <div class="contact-container">
+          <div class="contact-box">
             <div class="form-box">
               <form action="">
                 <div>
                   <input
+                    class="input"
                     id="full-name"
                     type="text"
-                    placeholder="John Smith"
+                    placeholder="Name"
                     name="full-name"
-                    required
                   />
                 </div>
                 <div>
                   <input
+                    class="input"
                     id="email"
                     type="email"
-                    placeholder="me@example.com"
+                    placeholder="Email"
                     name="email"
-                    required
                   />
                 </div>
                 <div>
-                  <input
+                  <textarea
                     type="text"
-                    placeholder="Message"
                     name="text"
-                    required
-                  />
+                    class="text-field"
+                    id="comment"
+                    placeholder="Message"
+                  ></textarea>
                 </div>
-                <input type="submit" />
+                <input class="contact-btn" type="submit" />
               </form>
             </div>
-            <div class="address-box">adress box</div>
+            <div class="address-box">
+              <h3 class="title-tertiary-white">Let's get started</h3>
+              <p class="contact-text">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <ul class="address-list">
+                <li class="list-items">
+                  <ion-icon
+                    class="contact-icons"
+                    name="location-outline"
+                  ></ion-icon
+                  >Montreal, Canada
+                </li>
+                <li class="list-items">
+                  <ion-icon class="contact-icons" name="call-outline"></ion-icon
+                  >+1 (438) 521-8800
+                </li>
+                <li class="list-items">
+                  <ion-icon class="contact-icons" name="mail-outline"></ion-icon
+                  >christian.sergerie@gmail.com
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
+      <footer>
+        <span
+          >Created By
+          <a href="https://www.christiansergerie.com">Christian Sergerie</a> |
+          <span class="far fa-copyright"></span> 2024 All rights reserved.</span
+        >
+      </footer>
     </main>
 
     <script src="js/script.js"></script>
