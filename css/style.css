@@ -99,9 +99,7 @@ section {
   margin: auto;
 }
 
-.services_section .services_container,
-.skills .skills-content,
-.contact .contact-content {
+.services_section .services_container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
