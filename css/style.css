@@ -167,7 +167,7 @@ section .title-tertiary-white {
 
 .navbar.sticky {
   padding: 15px 0;
-  background: crimson;
+  background: var(--main-color);
 }
 
 .navbar .container {
