@@ -63,11 +63,13 @@ Medium: 11px
   text-decoration: none;
 }
 
-html {
+html,
+body {
   /* font-size: 10px; */
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -781,8 +783,11 @@ Instead, 1rem = 1em = 16px */
 /**********************/
 
 @media (max-width: 34em) {
-  html {
+  html,
+  body,
+  main {
     font-size: 46%;
+    overflow-x: hidden;
   }
 
   .project-img {
@@ -797,5 +802,31 @@ Instead, 1rem = 1em = 16px */
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
+  }
+
+  .project-img {
+    width: 30rem;
+    height: auto;
+  }
+
+  /* .contact-container {
+    max-width: 25rem;
+    padding: 0 8rem;
+    margin: auto;
+  } */
+
+  .contact-section .container {
+    /* max-width: 300px; */
+    padding: 0 0.5rem;
+  }
+
+  .form-box {
+    padding: 1.5rem;
+  }
+
+  .container {
+    max-width: 180rem;
+    padding: 0 4rem;
+    margin: auto;
   }
 }
