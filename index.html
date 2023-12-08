@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/general.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -27,22 +26,27 @@
   </head>
   <body>
     <!-- navbar -->
-
-    <nav class="navbar">
-      <div class="container">
-        <a href="#"><img class="logo" src="images/logo.png" alt="" /></a>
-
-        <ul class="menu">
-          <li><a href="#home" class="menu-btn">Home</a></li>
-          <li><a href="#about" class="menu-btn">About</a></li>
-          <li><a href="#services" class="menu-btn">Services</a></li>
-          <li><a href="#skills" class="menu-btn">Projects</a></li>
-        </ul>
-        <div class="menu-btn">
-          <a href="#">Hire Me</a>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <a href="#"><img class="logo" src="images/logo.png" alt="" /></a>
+          <div class="openMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#about" class="menu-btn">About</a></li>
+            <li><a href="#services" class="menu-btn">Services</a></li>
+            <li><a href="#skills" class="menu-btn">Projects</a></li>
+            <li><a href="#skills" class="menu-btn-hire-me">Hire Me</a></li>
+            <div class="closeMenu"><i class="fas fa-times"></i></div>
+          </ul>
+          <div class="hire-btn">
+            <a href="#">Hire Me</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <!-- hero section -->
     <main>
@@ -62,7 +66,7 @@
       <section class="services_section">
         <div class="container">
           <h2 class="title">My services</h2>
-          <div class="services_container">
+          <div class="grid grid--3-cols services_container">
             <div class="services">
               <div class="services_box">
                 <svg
