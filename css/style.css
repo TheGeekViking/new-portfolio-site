@@ -98,7 +98,7 @@ section {
 .container {
   max-width: 180rem;
   padding: 0 8rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* .services_section .services_container {
@@ -477,6 +477,7 @@ nav .menu .closeMenu,
   display: grid;
   grid-template-columns: 60fr 40fr;
   box-shadow: 5px 5px 25px gray;
+  overflow: hidden;
 }
 
 .form-box {
@@ -489,7 +490,7 @@ nav .menu .closeMenu,
   padding: 6rem 4rem;
 }
 
-.input {
+.forms .input {
   width: 100%;
   margin-bottom: 3rem;
   height: 56px;
@@ -745,7 +746,7 @@ Instead, 1rem = 1em = 16px */
     display: block;
     position: absolute;
     top: 4rem;
-    right: 8.5rem;
+    right: 4rem;
   }
   nav .openMenu {
     display: block;
@@ -807,26 +808,5 @@ Instead, 1rem = 1em = 16px */
   .project-img {
     width: 30rem;
     height: auto;
-  }
-
-  /* .contact-container {
-    max-width: 25rem;
-    padding: 0 8rem;
-    margin: auto;
-  } */
-
-  .contact-section .container {
-    /* max-width: 300px; */
-    padding: 0 0.5rem;
-  }
-
-  .form-box {
-    padding: 1.5rem;
-  }
-
-  .container {
-    max-width: 180rem;
-    padding: 0 4rem;
-    margin: auto;
   }
 }
