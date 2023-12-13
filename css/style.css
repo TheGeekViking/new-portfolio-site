@@ -470,7 +470,7 @@ nav .menu .closeMenu,
 .contact-container {
   max-width: 140rem;
   padding: 0 8rem;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .contact-box {
@@ -808,5 +808,10 @@ Instead, 1rem = 1em = 16px */
   .project-img {
     width: 30rem;
     height: auto;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
   }
 }
