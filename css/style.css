@@ -98,7 +98,7 @@ section {
 .container {
   max-width: 180rem;
   padding: 0 8rem;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* .services_section .services_container {
@@ -679,7 +679,7 @@ Instead, 1rem = 1em = 16px */
   }
 
   .projects-section .project-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     margin-bottom: 2rem;
   }
 
@@ -699,12 +699,12 @@ Instead, 1rem = 1em = 16px */
   }
 
   .contact-box {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .grid--2-cols,
   .grid--3-cols {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .about_txt_box {
@@ -802,16 +802,11 @@ Instead, 1rem = 1em = 16px */
   .grid--2-cols,
   .grid--3-cols,
   .grid--4-cols {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .project-img {
     width: 30rem;
     height: auto;
-  }
-
-  .contact-box {
-    display: flex;
-    flex-direction: column;
   }
 }
